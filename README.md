@@ -1,16 +1,18 @@
-Welcome to StackEdit!
+Guide of Taiwan
 ===================
 
 
-Hey! I'm your first Markdown document in **StackEdit**[^stackedit]. Don't delete me, I'm very helpful! I can be recovered anyway in the **Utils** tab of the <i class="icon-cog"></i> **Settings** dialog.
+來自東南亞的外籍勞工亦稱移工（移住勞工 migrant worker），一直是台灣、香港、新加坡、日本、韓國甚至是阿拉伯世界重要的勞動力來源。根據國際勞工協會統計<sup>[1](#footnote1)</sup>，2013年亞太地區就有2千5百萬的移民工，移民工通常會在工作國待上3年或是更多，也因為語言及文化的差異而產生許多問題。
+我們希望首先針對於台灣的移工推出在地的網路服務，以交通運輸為出發點，提供他們在台生活所需之資訊，來降低因語言或文化所產生的差異。
+
 
 ----------
 
 
-Documents
+Requirement analysis
 -------------
 
-StackEdit stores your documents in your browser, which means all your documents are automatically saved locally and are accessible **offline!**
+根據勞基法，移工每週會有一天休假日，大多數的人都會聚集到各縣市的車站，直到傍晚才回到公司的宿舍。這一天的休假產生了相當多的消費行為，而根據我們的問卷調查，有6成的外勞表示他們對於語言的問題感到困擾，尤其搭乘大眾運輸時這個問題更加棘手。
 
 > **Note:**
 
@@ -261,3 +263,4 @@ cond(no)->op
   [6]: http://highlightjs.org/
   [7]: http://bramp.github.io/js-sequence-diagrams/
   [8]: http://adrai.github.io/flowchart.js/
+<a name="footnote1">1</a>: http://ilo.org/asia/areas/labour-migration/lang--en/index.htm
