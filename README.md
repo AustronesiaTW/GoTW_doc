@@ -19,6 +19,24 @@ Solution
 
 針對上述的問題，我們選擇從交通運輸出發，透過交通部提供的  API<sup>[2](#footnote2)</sup>，利用手機 App 作為媒介，將火車時刻及公車動態展示給移工們。
 
+### Features
+
+- 提供多國語言介面（英、越、印、泰）
+
+- 台鐵時刻表查詢
+
+- 公車動態查詢（台北市、新北市）
+
+- 查詢之歷史紀錄
+
+- 同時提供中英文站名
+
+- 問路（Helper）系統
+ 
+
+### User Interface
+
+![test](http://i.imgur.com/fe5q0si.jpg)
 
 > **Note:**
 
