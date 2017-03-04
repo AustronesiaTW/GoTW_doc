@@ -5,14 +5,10 @@ Guide of Taiwan
 來自東南亞的外籍勞工亦稱移工（移住勞工 migrant worker），一直是台灣、香港、新加坡、日本、韓國甚至是阿拉伯世界重要的勞動力來源。根據國際勞工協會統計<sup>[1](#footnote1)</sup>，2013年亞太地區就有2千5百萬的移民工，移民工通常會在工作國待上3年或是更多，也因為語言及文化的差異而產生許多問題。
 我們希望首先針對於台灣的移工推出在地的網路服務，以交通運輸為出發點，提供他們在台生活所需之資訊，來降低因語言或文化所產生的差異。
 
------
-
 Requirement analysis
 -----
 
 根據勞基法，移工每週會有一天休假日，大多數的人都會聚集到各縣市的車站，直到傍晚才回到公司的宿舍。這一天的休假產生了相當多的消費行為，而根據我們的問卷調查，有6成的外勞表示他們對於語言的問題感到困擾，尤其搭乘大眾運輸時這個問題更加棘手。
-
------
 
 Solution
 -----
@@ -49,7 +45,19 @@ Solution
 /v2/Rail/TRA/DailyTimetable/{TrainNo}?$select=StopTimes&$format=JSON
 ```
 
-
+取得指定起訖站間之 JSON 格式票價資料
+```
+/v2/Rail/TRA/ODFare/{OriginStationID}/to/{DestinationStationID}?$format=JSON
+```
+#### City Bus
+取得指定縣市的 JSON 格式市區公車路線與站牌資料並篩選與查詢條件相同之路線
+```
+/v2/Bus/StopOfRoute/City/{City}/{RouteName}?$filter=RouteName/Zh_tw eq '{RouteName}'&$format=JSON
+```
+取得指定縣市、路線名稱的 JSON 格式公車預估到站資料並篩選與查詢條件相同之路線
+```
+/v2/Bus/EstimatedTimeOfArrival/City/{City}/{RouteName}?$filter=RouteName/Zh_tw eq '{RouteName}'&$format=JSON
+```
 
 
 ### User Interface
