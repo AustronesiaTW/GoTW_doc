@@ -37,6 +37,13 @@ Solution
 
 ### API 
 
+#### TRA
+
+取得指定日期、起迄站間之站間時刻表資料並加入時間篩選
+```
+/v2/Rail/TRA/DailyTimetable/OD/{OriginStationID}/to/{DestinationStationID}/{TrainDate}?$filter=OriginStopTime/ArrivalTime gt '{DepartureTime}'&$format=JSON
+```
+
 ### User Interface
 
 ![test](http://i.imgur.com/fe5q0si.jpg)
