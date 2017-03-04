@@ -39,14 +39,22 @@ Solution
 
 #### TRA
 
-取得指定日期、起迄站間之站間時刻表資料並加入時間篩選
+取得指定日期、起迄站間之 JSON 格式站間時刻表資料並加入時間篩選
 ```
 /v2/Rail/TRA/DailyTimetable/OD/{OriginStationID}/to/{DestinationStationID}/{TrainDate}?$filter=OriginStopTime/ArrivalTime gt '{DepartureTime}'&$format=JSON
 ```
 
+取得當天指定車次的 JSON 格式時刻表資料並取出停靠時間資料
+```
+/v2/Rail/TRA/DailyTimetable/{TrainNo}?$select=StopTimes&$format=JSON
+```
+
+
+
+
 ### User Interface
 
-![test](http://i.imgur.com/fe5q0si.jpg)
+![test](http://imgur.com/50tBqsG.jpg)
 
 ### 
 
