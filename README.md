@@ -37,7 +37,7 @@ Solution
 
 #### **TRA**
 
-取得指定日期、起迄站間之 JSON 格式站間時刻表資料並加入時間篩選
+- 取得指定日期、起迄站間之 JSON 格式站間時刻表資料並加入時間篩選
 ```
 /v2/Rail/TRA/DailyTimetable/OD/{OriginStationID}/to/{DestinationStationID}/{TrainDate}?$filter=OriginStopTime/ArrivalTime gt '{DepartureTime}'&$format=JSON
 ```
