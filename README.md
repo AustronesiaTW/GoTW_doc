@@ -42,21 +42,21 @@ Solution
 /v2/Rail/TRA/DailyTimetable/OD/{OriginStationID}/to/{DestinationStationID}/{TrainDate}?$filter=OriginStopTime/ArrivalTime gt '{DepartureTime}'&$format=JSON
 ```
 
-取得當天指定車次的 JSON 格式時刻表資料並取出停靠時間資料
+- 取得當天指定車次的 JSON 格式時刻表資料並取出停靠時間資料
 ```
 /v2/Rail/TRA/DailyTimetable/{TrainNo}?$select=StopTimes&$format=JSON
 ```
 
-取得指定起訖站間之 JSON 格式票價資料
+- 取得指定起訖站間之 JSON 格式票價資料
 ```
 /v2/Rail/TRA/ODFare/{OriginStationID}/to/{DestinationStationID}?$format=JSON
 ```
 #### **City Bus**
-取得指定縣市的 JSON 格式市區公車路線與站牌資料並篩選與查詢條件相同之路線
+- 取得指定縣市的 JSON 格式市區公車路線與站牌資料並篩選與查詢條件相同之路線
 ```
 /v2/Bus/StopOfRoute/City/{City}/{RouteName}?$filter=RouteName/Zh_tw eq '{RouteName}'&$format=JSON
 ```
-取得指定縣市、路線名稱的 JSON 格式公車預估到站資料並篩選與查詢條件相同之路線
+- 取得指定縣市、路線名稱的 JSON 格式公車預估到站資料並篩選與查詢條件相同之路線
 ```
 /v2/Bus/EstimatedTimeOfArrival/City/{City}/{RouteName}?$filter=RouteName/Zh_tw eq '{RouteName}'&$format=JSON
 ```
